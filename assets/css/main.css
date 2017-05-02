@@ -13,19 +13,32 @@
 #vid {
 	width: 100%;
 	position: relative;
+	z-index: 0;
+	background-color: rgba(255, 255, 255, 0)
 }
-/*
+
+#page-1 {
+background: rgb(43,30,102);
+background: -moz-linear-gradient(top, rgba(43,30,102,1) 0%, rgba(118,39,143,1) 99%);
+background: -webkit-linear-gradient(top, rgba(43,30,102,1) 0%,rgba(118,39,143,1) 99%);
+background: linear-gradient(to bottom, rgba(43,30,102,1) 0%,rgba(118,39,143,1) 99%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2b1e66', endColorstr='#76278f',GradientType=0 );
+background-repeat: no-repeat;
+background-size: cover;
+}
+
 video {
-  min-width: 100%;
-  min-height: 100%;
-  width: auto;
-  height: auto;
-  top: -50;
-  left: -50;
-  z-index: -1000;
-  background-size: cover;
+	background-size: cover;
+	bottom: 0;
+	height: auto;
+	min-height: 100%;
+	min-width: 100%;
+	position: fixed;
+	right: 0;
+	width: auto;
+	z-index: -100;
 }
-*/
+
 .hidden {
 	display: none;
 }
@@ -39,13 +52,15 @@ nav {
  top: 0;
  position: fixed;
  width: 100%;
- height: 60px;
+ height: 100px;
  z-index: 3000;
+ background-color: #fff;
+ color: #333447;
 }
 
 li, ul, a {
 	text-decoration: none;
-	color: #333447;
+ 	color: #333447;
 	font-size: 20px;
 	font-weight: 100;
 }
@@ -61,8 +76,9 @@ nav li {
 }
 
 nav #login {
-	border: 1px solid #fff;
+	border: 1px solid #333447;
 	padding: 10px;
+	border-radius: 5px;
 }
 
 p {
@@ -144,20 +160,27 @@ p.gray {
 
 #phone {
 	position: relative;
-	top: 200px;
+	top: 199px;
 	width: 100%;
 	min-height: 500px;
 	overflow: hidden;
+	background-color: rgba(255, 255, 255, 0);
 }
 
 #phone div {
 	display: inline-block;
 }
 
+#phone h2,
+#phone p {
+	color: #fff;
+}
+
 .left {
 	margin-left: 12%;
 	width: 35%;
 	float: left;
+	color: #fff;
 }
 
 .right {
@@ -170,8 +193,11 @@ p.gray {
 }
 
 #watch-1 {
+	background-color: #fff;
 	position: relative;
-	top: 750px;
+	top: 749px;
+	width: 100%;
+	overflow: hidden;
 }
 
 #watch-1 .left {
@@ -187,7 +213,7 @@ p.gray {
 
 .video-div {
 position: relative;
-padding-bottom: 56.25%; /* 16/9 ratio */ /* IE6 workaround*/
+padding-bottom: 56.25%;
 overflow: hidden;
 }
 
@@ -200,6 +226,7 @@ height: 100%;
 }
 
 #june {
+	background-color: #fff;
 	position: relative;
 	top: 750px;
 	width: 100%;
@@ -220,6 +247,7 @@ height: 100%;
 }
 
 #watch-3 {
+	background-color: #fff;
 	position: relative;
 	width: 100%;
 	top: 750px;
@@ -241,14 +269,14 @@ height: 100%;
 
 footer {
 	position: relative;
-	top: 2550px;
-	margin-bottom: -100px;
+	top: 2250px;
 	background-color: #333447;
-	z-index: -1;
+	z-index: 100;
+	height: 550px;
 }
 
 footer div {
-	margin-top: -180px;
+	margin-top: 60px;
 	display: inline-block;
 }
 
