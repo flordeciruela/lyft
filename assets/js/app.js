@@ -11,6 +11,7 @@ window.addEventListener("scroll", function(){
 	}
 });
 */
+
 //función para desplegar inputs del formulario:
 var tel = document.getElementById('tel');
 var inputs = document.getElementsByTagName('input');
