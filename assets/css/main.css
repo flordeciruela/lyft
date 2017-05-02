@@ -30,6 +30,11 @@ video {
 	display: none;
 }
 
+.error {
+	margin-left: -30px;
+	width: 25px;
+}
+
 nav {
  top: 0;
  position: fixed;
@@ -47,6 +52,11 @@ li, ul, a {
 nav li {
 	display: inline-block;
 	margin-left: 45px;
+}
+
+.nav-white {
+	background-color: #fff;
+	color: #333447;
 }
 
 nav #login {

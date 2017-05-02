@@ -13,7 +13,7 @@
 			</video>-->
 			<section id="vid" class="content">
 				<nav>
-					<a href="#" id="logo"><img src="assets/img/logo-white.png" alt="logo"></a>
+					<a href="#" id="logo"><img src="assets/img/logo-white.png" id="img-logo" alt="logo"></a>
 					<div id="opc-nav">
 						<ul>
 							<li><a href="#">Drive</a></li>
@@ -23,15 +23,15 @@
 						</ul>
 					</div>
 				</nav>
-				<form>
+				<form id="formulario">
 					<h1>TURN MILES</h1>
 					<h1>INTO MONEY</h1>
 					<h4>SIGN UP TO DRIVE WITH LYFT.</h4>
-					<input type="text" placeholder="Phone Number">
-					<input type="text" class="hidden" placeholder="Name">
-					<input type="text" class="hidden" placeholder="Email">
-					<input type="text" class="hidden" placeholder="City">
-					<input type="submit" name="" value="Become a Driver">
+					<input type="text" id="tel" placeholder="Phone Number" patern="^([0-9])*$" title="Ingresar sólo números" required><img src="assets/img/error.png" class="error hidden">
+					<input type="text" class="hidden" placeholder="Name" pattern="^([A-ZÁ-Ú]{1}[a-zá-úA-ZÁ-Ú]+[\s]*)+$" title="Primera letra debe ser mayúscula" required><img src="assets/img/error.png" class="error hidden">
+					<input type="text" class="hidden" placeholder="Email" pattern="([a-zA-Z0–9]+)([\_\.\-{1}])?([a-zA-Z0–9]+)\@([a-zA-Z0–9]+)([\.])([a-zA-Z\.]+)g" title="Ingresar un correo válido" required><img src="assets/img/error.png" class="error hidden">
+					<input type="text" class="hidden" placeholder="City" pattern="^([A-ZÁ-Ú]{1}[a-zá-úA-ZÁ-Ú]+[\s]*)+$" title="Primera letra debe ser mayúscula" required><img src="assets/img/error.png" class="error hidden">
+					<input type="submit" id="submit" value="Become a Driver">
 					<a href="#" class="gray">Sign Up to Ride</a>
 					<p class="gray">Already applied? <span class="pink">Check the status of your application here.</span></p>
 					<p class="gray">Earn money for inviting friends to drive. <span class="pink">Learn more</span></p>
